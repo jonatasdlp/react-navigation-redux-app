@@ -7,9 +7,10 @@ export default class Pre extends Component {
   };
 
   render() {
+    const { dispatch } = this.props.navigation;
     return (
       <View>
-        <Button title="Tabs" onPress={() => this.props.navigation.navigate('Tabs')}/>
+        <Button title="Tabs" onPress={() => dispatch({ type: 'Tabs' })}/>
       </View>
     );
   }

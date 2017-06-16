@@ -1,3 +1,9 @@
-/**
- * Created by jonatas on 16/06/17.
- */
+import { createStore } from 'redux';
+import reducers from '../reducers';
+
+export default (initialState) => {
+  return createStore(
+    reducers,
+    initialState,
+  );
+};
