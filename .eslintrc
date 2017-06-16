@@ -1,1 +1,1 @@
-extends: fbjs/strict
+extends: 'fbjs'
